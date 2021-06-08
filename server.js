@@ -13,7 +13,7 @@ app.use(express.static('public'));
 app.use(require('./controllers/apiRoutes'));
 app.use(require('./controllers/homeRoutes'));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+mongoose.connect(process.env.MONGOODB_URI || "mongodb://localhost/workout", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
